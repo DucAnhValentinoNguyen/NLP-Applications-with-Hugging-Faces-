@@ -9,15 +9,16 @@ The dataset comes from "Rent the Runway" [link](https://cseweb.ucsd.edu//~jmcaul
 
 It is comprised of user reviews on clothing items, their ratings on fit, and other metadata about the user (i.e. gender, height, size, age, reason for renting) and the item (i.e. category). 
 
- #   Column       Non-Null Count  Dtype         
----  ------       --------------  -----         
- 0   user_id      1506 non-null   int64         
- 1   item_id      1506 non-null   int64         
- 2   rating       1506 non-null   int64         
- 3   rented for   1506 non-null   object        
- 4   review_text  1506 non-null   object        
- 5   category     1506 non-null   object        
- 6   height       1503 non-null   object        
- 7   size         1506 non-null   int64         
- 8   age          1500 non-null   float64       
- 9   review_date  1506 non-null   datetime64[ns]
+  
+| Column Name  | Non-Null Count | Data Type       | Description |
+|-------------|---------------|----------------|-------------|
+| user_id     | 1506          | int64          | Unique identifier for the user |
+| item_id     | 1506          | int64          | Unique identifier for the item |
+| rating      | 1506          | int64          | Rating given by the user |
+| rented for  | 1506          | object         | Purpose or occasion for renting |
+| review_text | 1506          | object         | Review provided by the user |
+| category    | 1506          | object         | Category of the item |
+| height      | 1503          | object         | Height of the user (if provided) |
+| size        | 1506          | int64          | Size of the item rented |
+| age         | 1500          | float64        | Age of the user (if provided) |
+| review_date | 1506          | datetime64[ns] | Date when the review was posted |
